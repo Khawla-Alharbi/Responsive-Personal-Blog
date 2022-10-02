@@ -1,6 +1,6 @@
 .blog-container{
   display: grid;
-  grid-template-rows: 80px 160px 500px 1fr 20px;
+  grid-template-rows: 80px 160px 10% 1fr 20px;
   grid-template-columns: 100%;
   grid-template-areas:
   "n"
@@ -30,42 +30,51 @@
   grid-area: as;
   background-color: #CEBBAD;
   color: #fdfdfd;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "t t"
+  "au au"
+  "sh so";
   padding: 4%;
 }
 
 .author{
-  display: grid;
-  grid-template-columns: 40% 60%;
+  grid-area: au;
+  /*display: grid;
+  grid-template-columns: 40% 60%;*/
+  display: flex;
+  flex-direction: column;
   padding: 4%;
-
+  align-items: center;
+  text-align: center;
+  border-bottom: solid 5px #fdfdfd;
 }
 
 #avatar{
-  border-radius: 50%;
-  width: 60%;
-  padding-left: 9%;
-  margin-top: 10%;
+  border-radius: 60%;
+  width: 20%;
+  margin-top: 2%;
 }
 
 .share{
+  grid-area: sh;
   font-size: 1.5em;
+  text-align: right; /*new*/
 }
 
 .social{
-  display: flex;
-  flex-direction: column;
-  margin-left: 20%;
+  grid-area: so;
 }
 
-#social-logo{
-  padding: 5%;
-  width: 20%;
+.social-logo{
+  padding: 3%;
+  width: 5%;
 }
 
 article{
+  grid-area: m;
   background-color: #fdfdfd;
   width: 95%;
   height: auto;
@@ -100,6 +109,14 @@ figure{
   color: #fdfdfd;
 }
 
+.title{ 
+grid-area: t;
+}
+
+#facebook{
+  width: 4%;
+}
+
 @media (min-device-width : 900px){
   .blog-container{
       display: grid;
@@ -113,10 +130,36 @@ figure{
       color:#373334;
       width: 100%;
    }
+
+   .blog-aside{
+    grid-area: as;
+    background-color: #CEBBAD;
+    color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+  }
     #blog-girl{
       margin: auto;
       height: 150px;
       width: auto;
+    }
+
+    .social{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20%;
+    }
+
+    .social-logo{
+      margin-top: 4%;
+      padding: 3%;
+      width: 20%;
+    } 
+    
+    #facebook{
+      width: 15%;
     }
   }
 
