@@ -1,0 +1,14 @@
+nav{
+    grid-area: n;
+    background-color: #fdfdfd;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+        
+li{
+    display: inline;
+    margin: 0px 5vw;
+}       

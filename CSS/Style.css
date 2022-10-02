@@ -1,0 +1,187 @@
+@import url("blogStyle.css");
+@import url("CardStyle.css");
+@import url("navStyle.css");
+
+body {
+    margin: 0 0 0 0;
+    background-color: #CEBBAD;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: 80px 300px 500px 1fr 20px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "n"
+    "h"
+    "as"
+    "m"
+    "f";
+    color:#373334;
+}
+
+a:hover {
+    transition: 0.3s;
+    color: #D8AB90;
+}
+
+.hello{
+    justify-content: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+header{
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    background-color: #fdfdfd;
+}
+
+#girl{
+    margin-top: 60px;
+    height: 250px;
+    width: 300px;
+}
+
+hr{
+    border-top: 5px solid #CEBBAD;
+}
+
+.line{
+    grid-area: l;
+    background-color: #CEBBAD;
+}
+
+aside{
+    grid-area: as;
+    padding: 8%;
+    background-color: #CEBBAD;
+    color: #fdfdfd;
+    margin-bottom: 1%;
+}
+
+main{
+    grid-area: m; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+footer{
+    display: flex;
+    grid-area: f;
+    background-color: #373334;
+    color: #fdfdfd;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+a{
+    color: #373334;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 15px;
+}
+
+#by{
+    color: #fdfdfd;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skill-border{
+    margin: 5%;
+    border: 2px solid #fdfdfd;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#cpp{
+    width: 80%;
+    border: 5px solid #70A365;
+    border-radius: 20px;
+}
+
+#python{
+    width: 50%;
+    border: 5px solid #EDA07A;
+    border-radius: 20px;
+}
+
+#html{
+    width: 90%;
+    border: 5px solid #70A365;
+    border-radius: 20px;
+}
+
+#css{
+    width: 70%;
+    border: 5px solid #E9D0C1;
+    border-radius: 20px;
+}
+
+#javas{
+    width: 40%;
+    border: 5px solid #EDA07A;
+    border-radius: 20px;
+}
+
+#skill-h3{
+    display: flex;
+    justify-content: center;
+}
+
+#date{
+    font-size: 12px;    
+}
+
+@media(min-width:900px) {
+    .container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 80px 300px 500px 20px;
+        grid-template-areas:
+        "n n n n n"
+        "h h h h h"
+        "as m m m m"
+        "f f f f f" ;
+        color:#373334;
+        width: 100%;
+   }
+   .hello{
+         font-size: larger;
+    }
+    #girl{
+        margin: auto;
+        height: 300px;
+        width: auto;
+    }
+    h1{
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10%;
+    }
+        
+    h2{
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10%;
+    }
+  }
+
