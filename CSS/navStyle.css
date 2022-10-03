@@ -1,14 +1,18 @@
 nav{
     grid-area: n;
     background-color: #fdfdfd;
+    font-size: 20px;
 }
 ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    margin-right: 7%;
 }
         
 li{
     display: inline;
-    margin: 0px 5vw;
+    margin-top: 2%;
+    margin-right: 3%;
+
 }       
