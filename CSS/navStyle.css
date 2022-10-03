@@ -3,6 +3,7 @@ nav{
     background-color: #fdfdfd;
     font-size: 20px;
 }
+
 ul{
     display: flex;
     flex-direction: row;
