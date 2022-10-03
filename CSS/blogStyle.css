@@ -116,7 +116,7 @@ font-size: 2em;
   width: 4%;
 }
 
-@media (min-device-width: 900px){
+@media(min-device-width: 900px){
   .blog-container{
       display: grid;
       grid-template-columns: 30% 70%;
