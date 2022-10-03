@@ -1,6 +1,6 @@
 .blog-container{
   display: grid;
-  grid-template-rows: 80px 160px 12% 1fr 20px;
+  grid-template-rows: 5% 160px 25% 1fr auto;
   grid-template-columns: 100%;
   grid-template-areas:
   "n"
@@ -59,29 +59,34 @@
 .share{
   grid-area: sh;
   font-size: 1.5em;
-  text-align: right; /*new*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30%;
 }
 
 .social{
   grid-area: so;
+  display: flex;
+  align-items: center;
 }
 
 .social-logo{
-  padding: 3%;
-  width: 5%;
+  width: 30%;
 }
+
+
 
 article{
   grid-area: m;
   background-color: #fdfdfd;
-  width: 95%;
-  height: auto;
+  width: 80%;
   border-top-left-radius: 20px;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
   display: flext;
   justify-content: center;
   align-items: center;
-  padding: 4%;
+  padding: 6%;
   font-size: 110%;
 }
 
@@ -109,14 +114,10 @@ figure{
 
 .title{ 
 grid-area: t;
-font-size: 2em;
+font-size: 1.5em;
 }
 
-#facebook{
-  width: 4%;
-}
-
-@media(min-device-width: 900px){
+@media (min-device-width : 900px){
   .blog-container{
       display: grid;
       grid-template-columns: 30% 70%;
@@ -139,6 +140,10 @@ font-size: 2em;
     align-items: center;
     padding: 4%;
   }
+
+  .title{
+    font-size: 1.5em;
+  }
     #blog-girl{
       margin: auto;
       height: 150px;
@@ -147,23 +152,14 @@ font-size: 2em;
 
     .social{
       display: flex;
-      flex-direction: column;
-      margin-left: 20%;
+      margin-left: 15%;
     }
 
-    .social-logo{
-      margin-top: 4%;
-      padding: 3%;
-      width: 20%;
-    } 
-    
-    #facebook{
-      width: 15%;
+    .share{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0%;
     }
-    
-    .title{ 
-      grid-area: t;
-      font-size: 1em;
-     }
   }
 
